@@ -1,0 +1,88 @@
+
+
+
+
+
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.btn:hover {
+  background-color: red;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.btn:hover {
+  background-color: red;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

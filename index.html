@@ -1,0 +1,2516 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	  <link rel="stylesheet" type="text/css" href="signup.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+/* Set height of body and the document to 110% */
+body, html {
+  height: 110%;
+  margin: 0;
+  font-family: Arial;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 25px;
+  width: 12.5%;
+}
+.tablink:hover {
+  background-color: #777;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-color: orange;}
+#About {background-color: turquoise;}
+#News {background-color: pink;}
+#Contact {background-color: yellow;}
+#Menu {background-color: lime;}
+#Varieties {background-color: coral;}
+#Feedback {background-color: silver;}
+#Login {background-color: red;}
+{ font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: ;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+.container {
+  background-color: ;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 15%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+a {
+  color: #2196F3;
+}
+hr {
+  border: 1px solid lightgrey;
+}
+span.price {
+  float: right;
+  color: grey;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+.checked {
+  color: orange;
+}
+* {box-sizing: border-box}
+.container {
+  background-color: #ddd;
+}
+.skills {
+  text-align: right;
+  color: red;
+}
+.{width: 80%; background-color: #4CAF50;}
+.{width: 80%; background-color: #2196F3;}
+.{width: 65%; background-color: #f44336;}
+.{width: 60%; background-color: #808080;}
+family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+  padding: 40px;
+  font-family: Arial;
+}
+/* Center website */
+.main {
+  max-width: 10000px;
+  margin: auto;
+}
+h1 {
+  font-size: 25px;
+  word-break: break-all;
+}
+.row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 5px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20.20%;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.btn:hover {
+  background-color: red;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.zoom {
+  padding: 50px;
+  background-color: white;
+  transition: transform .2s; /* Animation */
+  width: 300px;
+  height: 600px;
+  margin: auto;
+}
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: ;
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+                      <center><h1>MYLOGO.COM</h1></center>
+  <div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="product.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="product2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span> 
+ <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<button class="tablink" onclick="openPage('Home', this, 'orange')">HOME</button>
+<button class="tablink" onclick="openPage('About', this, 'turquoise')">ABOUT</button>
+<button class="tablink" onclick="openPage('News', this, 'pink')">NEWS</button>
+<button class="tablink" onclick="openPage('Contact', this, 'yellow') ">CONTACT</button>
+<button class="tablink" onclick="openPage('Menu', this, 'lime')">MENU</button>
+<button class="tablink" onclick="openPage('Varieties', this, 'coral')">VARIETIES</button>
+<button class="tablink" onclick="openPage('Feedback', this, 'silver')">FEEDBACK</button>
+<button class="tablink" onclick="openPage('Login', this, 'red')">LOGIN</button>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Online shopping is the process of buying goods and services from merchants over the Internet. Since the emergence of the World Wide Web, merchants have sought to sell their products to people who spend time online. Shoppers can visit web stores from the comfort of their homes and shop as they sit in front of the computer.
+Consumers can buy a huge variety of items from online stores, and just about anything can be purchased from companies that provide their products online. Books, clothing, household appliances, toys, hardware, software, and health insurance are just some of the hundreds of products consumers can buy from an online store.
+Many people choose to shop online because of the convenience. For example, when a person shops at a brick-and-mortar store, she has to drive to the store, find a parking place, and walk throughout the store until she locates the products she needs. After finding the items she wants to purchase, she may often need to stand in long lines at the cash register.
+In contrast, online shopping helps consumers avoid these disadvantages. A person only has to log onto the Internet, visit the store's website, and choose the items she desires. The items are held in a virtual shopping cart until she is ready to make her purchase. The shopper can remain in her pajamas as she does her shopping, and the process can be conducted in the wee hours of the morning or late into the night. Online stores almost never close.
+Despite the convenience, not everyone chooses to purchase items and services online. Some people like the idea of physically going to a store and experiencing the shopping process. They like to touch the merchandise, try on clothing, and be around other people. Online shopping doesn't permit shoppers to touch products or have any social interaction, and it also doesn't allow them to take the merchandise home the same day they buy it.
+<p>       <h1><a href="jothijosphin@gmail.com"/>jothijosphin@gamil.com</a></h1></p>
+      <img src="steel1.jpg"  style="width:20%" >
+	      <img src="cop10.jpg"  style="width:8%">
+		      <img src="group12.jpg" style="width:20%">
+
+
+
+</div>
+<div id="About" class="tabcontent">
+<h3>About</h3>
+  <p>Online Shopping Anything that customers purchases affects environment by means of delivery, whether they have the product shipped at home or drive to a brick and mortar store(supermarket). In earlier days people used to go to different shops before purchasing as they didn’t have a great deal of easy access to information on products.
+The	1Due to the development of World Wide Web it has now become easy to access the products available worldwide without wasting time, money and other resources apart from helping environment. Centre for Energy and Climate Solutions suggests that we can protect land and save energy by shopping online. (Trask, 2006)
+ example of Ocado Group plc that delivers the grocery directly to the customer instead of shopping from the supermarket helped in controlling the carbon emissions. Many supermarkets such as Marks and Spencer’s, John Lewis, Amazon, Carbon Cart etc. have their own websites are selling greener products and offering more choices to customers. Markham (1998)
+Ocado’s mission is to revolutionise the way people shop by giving them innovative and greener alternatives to traditional shopping. Using the cutting edge technology in their delivery model helps them to cut price, deliver quality and save environment.
+‘Meat free Mondays’ creates environmental awareness of climate changing impact of production of meat and consumption. By using bio- diesel in delivery vans the emission is reduced. They deliver their products from the state-of-the-art warehouses directly to consumer home. They are using anaerobic digestion to produce electricity from the leftover food. The company has their own green team called eco-warriors to increase environment awareness amongst the staff. They have slots allotted for green van area-wise to reduce carbon emission. They use combined heat and power (CHP) which is energy efficient process to mitigate environmental impact. A lot of recycling works using closed loop grocery bag recycling by keeping a track of the consumption of plastic bags and batteries.
+Bricks and mortar store eat up lot of energy and resources. Online shopping retail companies stores goods in direct warehouse which saves cost of fixtures and glitzy gimmicks of brick and mortar store.</p></span>
+</div>
+<div id="News" class="tabcontent">
+<h3>News</h3>
+ <p>Coconut shell sold on Amazon website for Rs 1,365;<br> 
+  Consumer-Durables-And-Information-Technology/Mobiles<br>
+samsung wants crown back seeks to blunt xiaomi s edge<br>
+The company’s new M-series of smartphones will be targeted at ‘millennials’, who are flocking to ecommerce platforms to buy smartphones.<br>
+Modi's e-commerce policy: Here are the winners and losers<br>
+The new dispensation seeks to ensure that these platforms are truly impartial marketplaces.<br>
+Happy New Year for Flipkart: Myntra & Jabong's special Christmas sale attracts 2.5 mn online buyers<br>
+The portals together sold 1,200 products per minute during the four-day sale.<br>
+Amazon US introduces ‘dangerous’ goods fee<br>
+FBA is a programme in which third-party sellers send their goods to be stored in Amazon warehouses before they are sold on Amazon.com. Items are then shipped out like a normal order by the ecommerce giant.<br>
+Flipkart ‘first choice’ for Indian smartphone buyers : IDC<br>
+IDC also observed that almost half of the consumers who were spending Rs 10,000-Rs 20,000 on smartphones previously have upgraded to the Rs 30,000 and above segment, in a sign of increasing purchasing power and discounts by e-tailers.<br>
+etailers will soon be liable for fraud and defective products<br>
+Under the new rules drafted by the consumer affairs department, ecommerce firms would have to disclose their business details and seller agreements.<br>
+after online success global brands are coming to a store near you<br>
+Dorothy Perkins is now eyeing brick-and-mortar stores, four years after the UK fashion brand signed an exclusive deal to sell online on Jabong, ET reported earlier.<br>
+rise of online shopping makes warehouses hot property in india<br<
+With the nation’s residential market in the doldrums and good quality office space in short supply, logistics assets are attracting global players.<br>
+retail group says holiday season off to a strong start</span></p>
+</div>
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>
+  <div class="row">
+    <div class="column">
+      <img src="map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+		          <option value="india">India</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+		 <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+        <button type="submit" class="submitbtn">submit</button>
+      </form>
+    </div>
+  </div>
+</p>
+</div>
+<div id="Menu" class="tabcontent">
+  <h3>Menu</h3>
+  <p><h1>=>Electronics<br>
+  =>Steel<br>
+  =>Daily Use<br>
+  =>Woman<br>
+  =>Children<br>
+  =>Boys<br>
+  =>Couples</h1>
+  </p>
+</div>
+<div id="Varieties" class="tabcontent">
+  <h3>Varieties</h3>
+  <p><img src="About-u22s_04.png"></p>
+</div>
+<div id="Feedback" class="tabcontent">
+  <h3>Feedback</h3>
+  <p>With the increasing popularity of several e-commerce portals, we are now heavily inclined to online shopping. These portals leave no stone unturn to grab the public attention with several lucrative offers and deals, super deals, happy hours, deal of the day etc. Whenever I open the my english daily, the first page is often occupied by big, attractive advertisements  of any popular eCommerce site.
+I made my first online shopping in the year 2005 from Rediff shopping, and later I did my shopping from sites like flipkart, jabong, amazon, ebay, myntra, yepme to name a few.
+Now, I have to admit that, these portals are really at best to grab our attention and interest to the products listed on these sites.
+Whenever, I start searching for a stuff, the listing is awesome in most cases. Images used on these shopping sites are bright, high definition and catch your eyes. But, as they say "All that glitters is not gold". this year old proverb applies to most of the stuffs sold online.
+Be it casual t shirts, jeans, weight loss aid, home appliances, watch, mobile accessories, they seldom match my imagination when I receive the product physically. The images on these sites are really great and compel us to imagine high. But, the in reality most of the stuffs are not at all at par with the image and description.
+Just go to flipkart or amazon, and read the customer reviews. You will get an idea what I exactly mean.  A sense of dis satisfaction reflected on most of the reviews . and I think this is reality.
+Now, I am sharing a real story. I had gifted a nice saree( price Rs. 1600) to my elder sister staying in another city. I liked the color of the saree and was satisfied with the quality too reading the product description, but the product was not at all worth value! My elder sister was just shocked to know the price and in any local market in Delhi, Kolkata, Bangalore or Chennai, I would get a far better stuff spending Rs.1600.
+I can write several more real experience and products are always below at par!
+So, if I compare about product quality, physical stores are far far better. I can rely on e -commerce sites just for branded products such as mobile, TV etc, else I could only rely on them for some low cost kids items, or innovative stuffs. I can not rely on them on everything.
+Books are the ideal things for me to order online, but often I do get a book at much discounted price from my college street market even covering my communication cost. Still I order books online nowadays as it is surely a time save for me!
+So, honestly speaking, online shopping has been a mixed experience for me, and Indian eCommerce sites have a long long way to go . if they want to a real alternative of physical store. like in western countries.</p>
+</div>
+<div id="Login" class="tabcontent">
+  <h3>Login</h3>
+    <div class="container">
+	<form>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>     
+      <input type="submit" value="login">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <span class="psw"><a href="#"> password password?</a></span>
+    </div>
+  </form>
+</div>
+</p>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>    
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<!-- MAIN (Center website) -->
+<div class="main">
+<center><h1 class="glow">BIG SAVINGS ON SMALL SCREENS</h1></center>
+<hr>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('electronics')"> electronics</button>
+  <button class="btn" onclick="filterSelection('steel')"> steel</button>
+   <button class="btn" onclick="filterSelection('Daliy use')"> Daliy use</button>
+    <button class="btn" onclick="filterSelection('slippers')"> slippers</button>
+  <button class="btn" onclick="filterSelection('children')"> children</button>
+  <button class="btn" onclick="filterSelection('women')"> women</button>
+  <button class="btn" onclick="filterSelection('boy')"> boy</button>
+  <button class="btn" onclick="filterSelection('couple')"> couple</button>
+<button class="btn"><i class="fa fa-download"></i> Download</button>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+<div class="dropdown">
+    <button class="dropbtn">Sort Options
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Relevance</a>
+      <a href="#">Popularity</a>
+      <a href="#">Price_High to Low</a>
+	        <a href="#">Price_Low to High</a>
+			      <a href="#">Newest First</a>
+	  </div>
+	  </div>
+<div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column steel">
+    <div class="zoom">
+      <img src="steel1.jpg" alt="preethi cooker" style="width:150%">
+      <h4>preethi cooker</h4>
+      <p>healthy and tasty food</p>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$800!')">BuyNow</button>
+	</div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel2.jpg" alt="hot box" style="width:140%">
+      <h4>preethi cooker</h4>
+      <p>healthy and tasty food</p>
+	  	  	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+</div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel3.jpg" alt="steel plates" style="width:84%">
+      <h4>plates</h4>
+      <p>healthy food</p>
+	  <span class="fa fa-star checked"></span>
+	 <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $90-$150!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column steel">
+    <div class="zoom">
+      <img src="steel4.jpg" alt="milk container" style="width:130%">
+      <h4>container</h4>
+	  	  <p>healthy food</p>
+		  <span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel5.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+	  	  <p>healthy food</p>
+		  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+   </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel6.jpg" alt="Nature" style="width:125%">
+      <h4>healthy foodt</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column steel">
+    <div class="zoom">
+      <img src="steel7.jpg" alt="Mountains" style="width:45%">
+      <h4>healthy food</h4>
+	  	  <p>Lorem ipsum dolor..</p>
+		  <span class="fa fa-star checked"></span>
+		  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel8.jpg" alt="Lights" style="width:60%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel9.jpg" alt="Nature" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column steel">
+    <div class="zoom">
+      <img src="steel10.jpg" alt="Mountains" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel11.jpg" alt="Lights" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel12.jpg" alt="Nature" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel13.jpg" alt="Nature" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel14.jpg" alt="Nature" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>                                 
+	</div>
+	<div class="column steel">
+    <div class="zoom">
+    <img src="steel15.jpg" alt="Nature" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column steel">
+    <div class="zoom">
+    <img src="steel16.jpg" alt="Nature" style="width:100%">
+      <h4>healthy food</h4>
+      <p>Lorem ipsum dolor..</p>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  
+  <div class="column electronics">
+    <div class="zoom">
+      <img src="group1.jpg" alt="Car" style="width:100%">
+      <h4>electronics products</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group2.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group3.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+      <img src="group4.jpg" alt="Car" style="width:100%">
+      <h4>electricetro</h4>
+	  	 <p>electric products need for every person in every day</p>
+		 <span class="fa fa-star checked"></span>
+		 <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group5.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+	  	   <p>electric products need for every person in every day</p>
+		   <span class="fa fa-star checked"></span>
+		   <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group6.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+      <img src="group7.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group8.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>	 
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group9.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+      <img src="group10.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group11.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group12.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group13.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group14.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group15.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column electronics">
+    <div class="zoom">
+    <img src="group16.jpg" alt="Car" style="width:100%">
+      <h4>electric</h4>
+      <p>electric products need for every person in every day</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+      <img src="1.jpg" alt="Car" style="width:100%">
+      <h4>handbag</h4>
+      <p>The thief made off with the woman's handbag. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$3000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use"> 
+    <div class="zoom">
+    <img src="2.jpg" alt="Car" style="width:100%">
+      <h4>handbag</h4>
+      <p>The thief made off with the woman's handbag. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$3000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="3.jpg" alt="Car" style="width:100%">
+      <h4>handbag</h4>
+      <p>The thief made off with the woman's handbag. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$3000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+      <img src="4.jpg" alt="Car" style="width:100%">
+      <h4>handbag</h4>
+      <p>The thief made off with the woman's handbag. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$3000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="5.jpg" alt="Car" style="width:100%">
+      <h4>handbag</h4>
+      <p>The thief made off with the woman's handbag. </p>
+   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$3000!')">BuyNow</button>
+  </div>
+  </div>
+   <div class="column Daliy use">
+    <div class="zoom">
+    <img src="13.jpg" alt="Car" style="width:100%">
+      <h4>handbag</h4>
+      <p>The thief made off with the woman's handbag. </p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$3000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+      <img src="14.jpg" alt="Car" style="width:100%">
+      <h4>watch</h4>
+      <p>camera forever</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="6.jpg" alt="Car" style="width:100%">
+      <h4>headphones</h4>
+      <p>dont us earphones ang headphones</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+      <img src="7.jpg" alt="Car" style="width:100%">
+      <h4>watch</h4>
+      <p>every time people using watch</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="8.jpg" alt="Car" style="width:100%">
+      <h4>watch</h4>
+      <p>every time people using watch</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$1000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="9.jpg" alt="Car" style="width:100%">
+      <h4>watch</h4>
+      <p>every time people using watch</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+      <img src="10.jpg" alt="Car" style="width:100%">
+      <h4>watch</h4>
+      <p>every time people using watch</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="11.jpg" alt="Car" style="width:100%">
+      <h4>camera</h4>
+      <p>camera forever</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="12.jpg" alt="Car" style="width:100%">
+      <h4>camera</h4>
+      <p>camera forever</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="16.jpg" alt="Car" style="width:100%">
+      <h4>camera</h4>
+      <p>camera forever</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column Daliy use">
+    <div class="zoom">
+    <img src="14.jpg" alt="Car" style="width:100%">
+      <h4>camera</h4>
+      <p>camera forever</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$10000!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+      <img src="slip1.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip2.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip3.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+      <img src="slip4.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip5.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip6.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+      <img src="slip7.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip8.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip9.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+      <img src="slip10.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip11.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column slippers">
+    <div class="zoom">
+    <img src="slip12.jpg" alt="Car" style="width:100%">
+      <h4>slippers</h4>
+      <p>I'd never leave my house in slippers. </p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $199-$500!')">BuyNow</button>
+    </div>
+  </div>
+<div class="column children">
+    <div class="zoom">
+      <img src="child1.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child2.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p> A house without children is not a home</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child3.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+   <div class="column children">
+    <div class="zoom">
+      <img src="child4.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child5.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child6.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+	</div>
+	 <div class="column children">
+    <div class="zoom">
+      <img src="child7.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child8.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child9.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child10.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child11.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column children">
+    <div class="zoom">
+    <img src="child12.jpg" alt="Car" style="width:100%">
+      <h4>children</h4>
+      <p>A house without children is not a home.</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $500-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  
+  <div class="column women">
+    <div class="zoom">
+      <img src="a.jpg" alt="Car" style="width:100%">
+      <h4>Partywear_Sarees</h4>
+      <p>Under $999<br>
+	  Min 60% off </br>
+	  Saree,Livie & more</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="b.jpg" alt="Car" style="width:100%">
+     <h4>Net_Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie & more</br></p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="c.jpg" alt="Car" style="width:100%">
+    <h4>Designer_Sarees</h4>
+      <p>Min 50% off <br>
+	  Festive Special</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+   <div class="column women">
+    <div class="zoom">
+      <img src="d.jpg" alt="Car" style="width:100%">
+      <h4>Lehenga_Sarees</h4>
+      <p>Min 50% off <br>
+	  For Wedding Season</p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="e.jpg" alt="Car" style="width:100%">
+      <h4>Heavy_Net_Sarees</h4>
+      <p>Up to 80% off <br>
+	  M.S.Retail,Mimosa & more</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="f.jpg" alt="Car" style="width:100%">
+     <h4>Net Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie & more</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+	</div>
+	 <div class="column women">
+    <div class="zoom">
+      <img src="g.jpg" alt="Car" style="width:100%">
+      <h4>Plain Sarees</h4>
+      <p>From $199 <br>
+	  Casual,Party & Fastive</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="h.jpg" alt="Car" style="width:100%">
+     <h4>Net Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie & more</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="i.jpg" alt="Car" style="width:100%">
+  <h4>Net Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie & more</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+  </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="j.jpg" alt="Car" style="width:100%">
+      <h4>Net Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie&more</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="k.jpg" alt="Car" style="width:100%">
+     <h4>Net Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie & more</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $3000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column women">
+    <div class="zoom">
+    <img src="l.jpg" alt="Car" style="width:100%">
+      <h4>Net Sarees</h4>
+      <p>Min 60% off <br>
+	  Saree,Livie&more</p>
+ <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+      <img src="boy1.jpg" alt="Car" style="width:100%">
+      <h4>Nnehu_Jackets</h4>
+      <p>Min 50% Off For Men</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy2.jpg" alt="Car" style="width:100%">
+      <h4>Nnehu_Jackets</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy3.jpg" alt="Car" style="width:100%">
+      <h4>JBN</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+   <div class="column boy">
+    <div class="zoom">
+      <img src="boy4.jpg" alt="Car" style="width:100%">
+           <h4>Mojua</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy5.jpg" alt="Car" style="width:100%">
+            <h4>Nnehu_Jackets</h4>
+      <p>Min 50% Off For Men</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy6.jpg" alt="Car" style="width:100%">
+            <h4>Nikunji</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+	</div>
+	 <div class="column boy">
+    <div class="zoom">
+      <img src="boy7.jpg" alt="Car" style="width:100%">
+          <h4>Nnehu_Jackets</h4>
+      <p>Min 50% Off For Men</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy8.jpg" alt="Car" style="width:100%">
+         <h4>Nnehu_Jackets</h4>
+      <p>Min 50% Off For Men</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy9.jpg" alt="Car" style="width:100%">
+          <h4>SBN_Swerwari</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy10.jpg" alt="Car" style="width:100%">
+          <h4>SBN_Swerwari</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy11.jpg" alt="Car" style="width:100%">
+          <h4>SBN_Swerwari</h4>
+      <p>Min 50% Off For Men</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column boy">
+    <div class="zoom">
+    <img src="boy12.jpg" alt="Car" style="width:100%">
+     <h4>Nnehu_Jackets</h4>
+      <p>Min 50% Off For Men</p> 
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $2000-$9999!')">BuyNow</button>
+	  </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+      <img src="cop1.jpg" alt="Car" style="width:100%">
+      <h4>couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop2.jpg" alt="Car" style="width:100%">
+      <h4>couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop3.jpg" alt="Car" style="width:100%">
+      <h4>couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+   <div class="column couple">
+    <div class="zoom">
+      <img src="cop4.jpg" alt="Car" style="width:100%">
+      <h4>couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+	</div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop5.jpg" alt="Car" style="width:100%">
+      <h4>couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop6.jpg" alt="Car" style="width:100%">
+      <h4>couple</h4>
+      <p>You and me make a wonderful “WE”</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>  
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+	</div>
+	 <div class="column couple">
+    <div class="zoom">
+      <img src="cop7.jpg" alt="Car" style="width:100%">
+      <h4>couple</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span> 
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button> 
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop8.jpg" alt="Car" style="width:100%">
+      <h4>couple</h4>
+      <p>You and me make a wonderful “WE”</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>  
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop9.jpg" alt="Car" style="width:100%">
+      <h4>couple</h4>
+      <p>You and me make a wonderful “WE”</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>  
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop10.jpg" alt="Car" style="width:100%">
+      <h4>couple</h4>
+      <p>You and me make a wonderful “WE”</p>
+	 <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>  
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop11.jpg" alt="Car" style="width:150%">
+      <h4>couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	  <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>  
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>
+    </div>
+  </div>
+  <div class="column couple">
+    <div class="zoom">
+    <img src="cop12.jpg" alt="Car" style="width:100%">
+      <h4>Couples</h4>
+      <p>You and me make a wonderful “WE”</p>
+	   <span class="fa fa-star checked"></span>
+	  <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+<br>
+<button type="button" onclick="alert('This Product $1000-$9999!')">BuyNow</button>  
+  </div>
+  </div>
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center> <h2>ONLINE BILLING PAYMENT</h2> <p></p> </center>
+<div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-50">
+		                      <p>ONLINE BILL PAYMENT</P>
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Jothi">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="jothi@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Jothi">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>    
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black">
+	  <i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>The Benefits Of Online Bill Pay | Clearpoint</title>
+	<link rel="shortcut icon" href="https://www.clearpoint.org/images/favicon.ico">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	</ul>
+	</section>
+	</div>
+	</div>
+	<footer class="page">
+	<div id="footer">
+		<a id="logo-clearpoint" href="https://www.clearpoint.org/" title="Clearpoint Credit Counseling Solutions&reg;"><img src="https://www.clearpoint.org/images/logo-clearpoint.png" alt="Clearpoint Credit Counseling Solutions&reg; logo" width="250" height="56"></a>
+	  	<div id="social-footer">                    
+			<p>Lets Get Social!</p>
+			<ul class="social">
+				 <h3>Payment</h3>
+            	</div>
+		<div id="copyright">
+         	<p>Copyright &copy; 2019, Clearpoint Credit Counseling Solutions, a Division of Money Management International, Inc.  All Rights Reserved.  501(c)(3) nonprofit organization.  Licensed debt management services provider.  We do not lend money.  Not a loan company.</p>
+			<p><a href="https://www.clearpoint.org/legal/">Security, Privacy &amp; Legal</a></p>
+		</div>
+		<label for="fname">Accepted Cards</label>
+           <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange" alt="BBB, COA, NFCC, and HUD logos" width="268" height="52"></i>
+            </div>	</ul>
+	</div>
+	</footer>
+	<link rel="stylesheet" property="stylesheet" href="https://www.clearpoint.org/css/main.css" type="text/css" media="all">
+	<script type="text/javascript">for(var allHasChildren=document.querySelectorAll(".toggle-button"),x=0;x<allHasChildren.length;x++)allHasChildren[x].onclick=function(){var e=document.querySelectorAll(".toggle-menu")[0],t=document.querySelectorAll(".toggle-button")[0];e.classList.contains("active")?(e.classList.remove("active"),t.classList.remove("active")):(e.classList.add("active"),t.classList.add("active"))};</script>
+<script type='text/javascript' src='https://www.clearpoint.org/wp-includes/js/comment-reply.min.js?ver=5.0.2'></script>
+<script async="async" type='text/javascript' src='https://www.clearpoint.org/wp-content/plugins/akismet/_inc/form.js?ver=4.1'></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="footer">
+  <p><h1><b>CREATED  BY  JOTHI-17/UCSA/546</b></h1></p>
+</div>
+</body>
+</html> 
+
+
+
